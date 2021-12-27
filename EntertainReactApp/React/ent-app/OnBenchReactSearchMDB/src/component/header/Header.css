@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', monospace;    
+  font-size: 1vw;
+  padding: 4px;
+  border-radius: 50px;
+  background-color: white;
+  color: rgb(16, 29, 49);
+  font-weight: 200;
+}
+
+@media (max-width: 1000px){
+    .header {
+        padding-top: 15px;
+        font-size: 6.4vw;
+    }
+}
+.user {
+    
+    background-color: #39445a;
+    font-size: 1vw;
+    color: rgb(173, 172, 172);
+    justify-content: right;
+    padding-bottom: none;
+    box-shadow: none;
+}

@@ -1,0 +1,33 @@
+package com.bench.netflex.service;
+
+import java.util.Collection;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.bench.netflex.model.User;
+import com.bench.netflex.repo.UserRepository;
+
+public class CustomUserDetails implements UserDetailsService
+{
+
+	private User user;
+    
+    public CustomUserDetails(User user) {
+        this.user = user;
+    }
+
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		User user = UserRepository.findByEmail(username);
+        if (user == null) {
+            throw new UsernameNotFoundException("User not found");
+        }
+        return new CustomUserDetails(user);
+	}
+    
+	
+
+}

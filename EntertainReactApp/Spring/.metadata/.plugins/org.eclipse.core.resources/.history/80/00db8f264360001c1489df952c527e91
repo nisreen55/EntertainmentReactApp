@@ -1,0 +1,28 @@
+package com.bench.netflex.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name="userlist")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@IdClass(UserListId.class)
+
+public class UserList 
+{
+	@Id
+	private Long userId;
+	
+	@Id
+	private Long movieId;
+}

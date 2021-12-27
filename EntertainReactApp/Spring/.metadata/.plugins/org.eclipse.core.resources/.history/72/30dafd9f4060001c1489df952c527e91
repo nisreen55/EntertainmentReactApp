@@ -1,0 +1,5 @@
+package com.bench.netflex.repo;
+
+public interface UserListRepository {
+
+}

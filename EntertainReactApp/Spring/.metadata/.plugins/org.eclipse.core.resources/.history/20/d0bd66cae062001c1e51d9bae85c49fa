@@ -1,0 +1,29 @@
+package com.bench.netflex.model;
+
+
+@Entity
+@Table(name="userlist")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+public class UserList 
+{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	private String email;
+	
+	private String movieid;
+	
+	private String movieurl;
+	
+	private String movietitle;
+	
+	private String moviename;
+
+	private String movieoriginalname;
+
+
+}

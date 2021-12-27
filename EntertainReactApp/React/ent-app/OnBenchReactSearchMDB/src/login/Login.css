@@ -1,0 +1,108 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+   url("movCover.jpg");
+}
+
+.wrapper {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  position: relative;
+}
+
+.login__button {
+  height: 40px;
+  background-color: rgb(245, 48, 97);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.h1 {
+  font-size: 50px;
+}
+
+.h2 {
+  margin: 20px;
+}
+.logo {
+  height: 40px;
+}
+
+.p {
+  font-size: 20px;
+}
+.logo {
+  height: 40px;
+}
+
+.input {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+
+.inold {
+  height: 40px;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+}
+.in {
+  height: 40px;
+  background-color: rgb(85, 84, 84);
+  color: white;
+
+
+  flex: 3;
+  border: none;
+  padding: 0 10px;
+}
+
+.placeholder {
+  color: white;
+}
+.form {
+  width: 300px;
+  height: 250px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sp {
+  color: lightblue;
+}

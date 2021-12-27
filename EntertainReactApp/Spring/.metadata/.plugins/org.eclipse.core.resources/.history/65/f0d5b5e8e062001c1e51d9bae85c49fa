@@ -1,0 +1,19 @@
+package com.bench.netflex.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserListId implements Serializable
+{
+	
+	private Long userId;
+	
+	private Long movieId;
+}

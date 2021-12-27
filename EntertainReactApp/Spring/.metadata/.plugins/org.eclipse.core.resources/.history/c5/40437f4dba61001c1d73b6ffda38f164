@@ -1,0 +1,28 @@
+package com.bench.netflex.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.bench.netflex.model.User;
+import com.bench.netflex.model.UserList;
+import com.bench.netflex.repo.UserListRepository;
+import com.bench.netflex.repo.UserRepository;
+@Service
+public class UserListService {
+	
+	UserListRepository userListRepository;
+	
+	public UserListService(UserListRepository userListRepository) {
+        this.userListRepository = userListRepository;
+    }
+	
+	public UserList saveUserList(UserList  userList) {
+    	return userListRepository.save(userList);
+    }
+	
+	public List<UserList> getUserslist() {
+        return userListRepository.findAll();
+    }
+	
+}

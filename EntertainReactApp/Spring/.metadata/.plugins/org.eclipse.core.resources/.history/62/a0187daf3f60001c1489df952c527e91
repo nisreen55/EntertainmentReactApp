@@ -1,0 +1,5 @@
+package com.bench.netflex.model;
+
+public class UserList {
+
+}

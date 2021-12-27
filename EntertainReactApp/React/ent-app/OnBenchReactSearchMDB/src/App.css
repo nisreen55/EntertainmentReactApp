@@ -1,0 +1,37 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #696f74;
+
+  color: white;
+  padding-top: 130px;
+  padding-bottom: 70px;
+  font-family: 'Courier New', monospace;  ;    
+  
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding-top: 70px;
+  }
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Myriad Pro Semibold Italic';    
+  font-family: 'Myriad Pro Semibold Italic';    
+  font-size: 2vw;
+  padding: 4px;
+  border-radius: 50px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .pageTitle {
+    font-size: 6.4vw;
+  }
+}

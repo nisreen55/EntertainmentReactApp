@@ -1,0 +1,16 @@
+package com.bench.netflex.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.bench.netflex.model.User;
+import com.bench.netflex.model.UserList;
+
+@Repository
+public interface UserListRepository extends JpaRepository<UserList, Long> {
+	@Query("SELECT DISTINCT u FROM UserList u WHERE u.email = ?")
+    public UserList findByEmail(String email);
+     
+
+}
